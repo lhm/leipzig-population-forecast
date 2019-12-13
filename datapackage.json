@@ -1,0 +1,71 @@
+{
+    "profile": "tabular-data-package",
+    "resources": [
+        {
+            "path": "data/population-forecast.csv",
+            "profile": "tabular-data-resource",
+            "name": "population-forecast",
+            "format": "csv",
+            "mediatype": "text/csv",
+            "encoding": "utf-8",
+            "schema": {
+                "fields": [
+                    {
+                        "name": "Jahr",
+                        "type": "integer",
+                        "format": "default"
+                    },
+                    {
+                        "name": "Geburten",
+                        "type": "number",
+                        "format": "default"
+                    },
+                    {
+                        "name": "Sterbef\u00e4lle",
+                        "type": "number",
+                        "format": "default"
+                    },
+                    {
+                        "name": "Saldo (nat\u00fcrlich)",
+                        "type": "number",
+                        "format": "default"
+                    },
+                    {
+                        "name": "Zuz\u00fcge",
+                        "type": "number",
+                        "format": "default"
+                    },
+                    {
+                        "name": "Wegz\u00fcge",
+                        "type": "number",
+                        "format": "default"
+                    },
+                    {
+                        "name": "Saldo (Aussenwanderungen)",
+                        "type": "number",
+                        "format": "default"
+                    },
+                    {
+                        "name": "Gesamtsaldo",
+                        "type": "number",
+                        "format": "default"
+                    },
+                    {
+                        "name": "Einwohner",
+                        "type": "number",
+                        "format": "default"
+                    }
+                ],
+                "missingValues": [
+                    ""
+                ]
+            }
+        }
+    ],
+    "sources": [
+        {
+            "name": "Stadt Leipzig - Amt f\u00fcr Statistik und Wahlen",
+            "path": "https://static.leipzig.de/fileadmin/mediendatenbank/leipzig-de/Stadt/02.1_Dez1_Allgemeine_Verwaltung/12_Statistik_und_Wahlen/Stadtforschung/Bevolkerungsvorausschatzung_2019.pdf"
+        }
+    ]
+}
